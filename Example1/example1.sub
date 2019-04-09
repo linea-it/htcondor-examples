@@ -4,7 +4,7 @@
 ###################################
 getenv 		= true
 universe    	= vanilla
-executable  	= $ENV(HOME)/condor-examples/Example1/count_objects_into_fits.py
+executable  	= $ENV(HOME)/htcondor-examples/Example1/count_objects_into_fits.py
 notification 	= Complete
 notify_user 	= carlosadean@linea.gov.br
 error 		= example1-$(Process).err

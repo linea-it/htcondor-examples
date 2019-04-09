@@ -4,12 +4,12 @@
 ######################################
 universe        = parallel
 getenv          = true
-executable      = $ENV(HOME)/condor-examples/Example3/openmpiscript
-arguments       = hello_world_with_mpi
+executable      = $ENV(HOME)/htcondor-examples/Example3/openmpiscript
+arguments       = hello_world_parallel
 machine_count   = 100
 
 log             = example3-$(Process).log
 output          = example3-$(Process).out
-error		= example3-$(Process).err
+error		    = example3-$(Process).err
 
 queue

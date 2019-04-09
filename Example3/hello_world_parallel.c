@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include <stdio.h> /* memset */
 #include <mpi.h>
-#include <unistd.h>
+#include <unistd.h> /* close */
 
 #define size 256
 

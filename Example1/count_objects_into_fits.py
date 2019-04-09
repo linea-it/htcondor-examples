@@ -21,13 +21,13 @@
 import pyfits
 import os
 
-files = os.listdir('.')
+files = os.listdir('./data')
 
 count = 0
 fcount = 0
 for file in files:
     fcount += 1
-    hdulist = pyfits.open(file)
+    hdulist = pyfits.open('./data/'+ file)
     tbdata = hdulist[1].data
     lines = int(len(tbdata))
     count += lines

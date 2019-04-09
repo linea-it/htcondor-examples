@@ -3,15 +3,15 @@
 # para execução do aplicativo     #
 # que calculapi			  #
 ###################################
-getenv 		= true
+getenv 		    = true
 universe    	= vanilla
-executable  	= $ENV(HOME)/condor-examples/Example2/calculapi
-arguments	= 10000000
+executable  	= $ENV(HOME)/htcondor-examples/Example2/calculapi
+arguments       = 1000000000
 notification 	= Complete
 notify_user 	= carlosadean@linea.gov.br
-error 		= example2-$(Process).err
-output 		= example2-$(Process).out
-log 		= example2-$(Process).log
+error 		    = example2-$(Process).err
+output 		    = example2-$(Process).out
+log 		    = example2-$(Process).log
 
 queue
 
