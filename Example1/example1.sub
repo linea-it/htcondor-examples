@@ -1,0 +1,15 @@
+###################################
+# Exemplo de arquivo de submissão #
+# para execução de script python  #
+###################################
+getenv 		= true
+universe    	= vanilla
+executable  	= $ENV(HOME)/condor-examples/Example1/count_objects_into_fits.py
+notification 	= Complete
+notify_user 	= carlosadean@linea.gov.br
+error 		= example1-$(Process).err
+output 		= example1-$(Process).out
+log 		= example1-$(Process).log
+
+queue
+
